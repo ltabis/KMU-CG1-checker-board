@@ -1,58 +1,7 @@
-﻿  Camera.cpp
-  Renderer.cpp
+﻿  main.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
 C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  Cube.cpp
-  Plane.cpp
-  MatrixStack.cpp
-  IndexBuffer.cpp
-  Triangle.cpp
-  Logger.cpp
-  GUI.cpp
-  ShaderLoader.cpp
-  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_impl_glfw.cpp
-  imgui_impl_opengl3.cpp
-  imgui_widgets.cpp
-  main.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  VertexBuffer.cpp
-  VertexArrayLayout.cpp
-  VertexArray.cpp
-  Generating Code...
-  Compiling...
-  NoClipCameraController.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestBackgroundColorChange.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestCamera.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestNoClipCameraController.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestDrawTriangle.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestMenu.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestDrawCube.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestShapeAbstraction.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  TestShapeSpawner.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-C:\Graphics\Tools\glfw\include\GLFW\glfw3.h(104): message : see previous definition of 'APIENTRY'
-  Generating Code...
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
 glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'C:\dev\Computer Graphics 1\KMU-CG1-checker-board\bin\Win32\Debug\vc120.pdb'; linking object as if no debug info
-  CG1.vcxproj -> C:\dev\Computer Graphics 1\KMU-CG1-checker-board\bin\Win32\Debug\CG1.exe
+  CG1.vcxproj -> C:\dev\Computer Graphics 1\KMU-CG1-checker-board\bin\Win32\Debug\CheckerBoard.exe

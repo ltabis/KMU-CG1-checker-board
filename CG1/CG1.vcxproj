@@ -24,6 +24,7 @@
     <ProjectGuid>{a5ecd5aa-66ff-4efd-9688-10a75389751d}</ProjectGuid>
     <RootNamespace>CG1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CheckerBoard</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -178,6 +179,7 @@
     <ClCompile Include="src\Core\DataStructures\MatrixStack.cpp" />
     <ClCompile Include="src\Core\DataStructures\IndexBuffer.cpp" />
     <ClCompile Include="src\Core\WorldObjects\Primitives\Triangle.cpp" />
+    <ClCompile Include="src\Dependencies\Viewer\Viewer.cpp" />
     <ClCompile Include="src\Loging\Logger.cpp" />
     <ClCompile Include="src\Core\Components\GUI.cpp" />
     <ClCompile Include="src\Core\Components\ShaderLoader.cpp" />
@@ -192,14 +194,6 @@
     <ClCompile Include="src\Core\DataStructures\VertexArrayLayout.cpp" />
     <ClCompile Include="src\Core\DataStructures\VertexArray.cpp" />
     <ClCompile Include="src\Miscellaneous\NoClipCameraController.cpp" />
-    <ClCompile Include="src\Tests\TestBackgroundColorChange.cpp" />
-    <ClCompile Include="src\Tests\TestCamera.cpp" />
-    <ClCompile Include="src\Tests\TestNoClipCameraController.cpp" />
-    <ClCompile Include="src\Tests\TestDrawTriangle.cpp" />
-    <ClCompile Include="src\Tests\Framework\TestMenu.cpp" />
-    <ClCompile Include="src\Tests\TestDrawCube.cpp" />
-    <ClCompile Include="src\Tests\TestShapeAbstraction.cpp" />
-    <ClCompile Include="src\Tests\TestShapeSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Core\Camera.hpp" />
@@ -211,6 +205,7 @@
     <ClInclude Include="src\Core\DataStructures\Transform.hpp" />
     <ClInclude Include="src\Core\WorldObjects\AShape.hpp" />
     <ClInclude Include="src\Core\WorldObjects\Primitives\Triangle.hpp" />
+    <ClInclude Include="src\Dependencies\Viewer\Viewer.h" />
     <ClInclude Include="src\Loging\Logger.hpp" />
     <ClInclude Include="src\Core\Components\GUI.hpp" />
     <ClInclude Include="src\dependencies\imgui\imgui\imconfig.h" />
@@ -228,15 +223,6 @@
     <ClInclude Include="src\Core\DataStructures\VertexBuffer.hpp" />
     <ClInclude Include="src\Core\DataStructures\VertexArrayLayout.hpp" />
     <ClInclude Include="src\Core\DataStructures\VertexArray.hpp" />
-    <ClInclude Include="src\Tests\Framework\ATest.hpp" />
-    <ClInclude Include="src\Tests\TestBackgroundColorChange.hpp" />
-    <ClInclude Include="src\Tests\TestCamera.hpp" />
-    <ClInclude Include="src\Tests\TestNoClipCameraController.hpp" />
-    <ClInclude Include="src\Tests\TestDrawTriangle.hpp" />
-    <ClInclude Include="src\Tests\Framework\TestMenu.hpp" />
-    <ClInclude Include="src\Tests\TestDrawCube.hpp" />
-    <ClInclude Include="src\Tests\TestShapeAbstraction.hpp" />
-    <ClInclude Include="src\Tests\TestShapeSpawner.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shaders\basic.shader" />
