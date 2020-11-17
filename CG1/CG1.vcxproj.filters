@@ -81,6 +81,9 @@
     <ClCompile Include="src\Dependencies\Viewer\Viewer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CheckeredFloor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Profiling\Breakpoint.hpp">
@@ -164,10 +167,12 @@
     <ClInclude Include="src\Dependencies\Viewer\Viewer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CheckeredFloor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\shaders\basic.shader" />
-    <None Include="res\shaders\empty.shader" />
     <None Include="res\shaders\square.shader" />
+    <None Include="res\shaders\checker.shader" />
   </ItemGroup>
 </Project>
