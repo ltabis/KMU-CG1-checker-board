@@ -28,7 +28,7 @@ int main(void)
 
 	// Creating a cube with it's shader.
 	std::unique_ptr<CG::AShape> cube = std::make_unique<CG::Cube>(
-		glm::vec3(0.f, 1.f, -3.f),
+		glm::vec3(0.f, 1.1f, 0.f),
 		glm::vec3(0.f),
 		glm::vec3(1.f)
 	);
