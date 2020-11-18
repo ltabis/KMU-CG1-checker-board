@@ -6,16 +6,21 @@ CG::CheckeredFloor::CheckeredFloor(int size, int nsquare)
 {
 	float squareSize = m_Size / m_Nsquare;
 
-	//for (int n = 0; n < m_Nsquare; ++n) {
-	//	_planes.push_back(Plane(
-	//		glm::vec3(n, 0.f, 1.f),
-	//		glm::vec3(0.f, 0.f, 0.f),
-	//		glm::vec3(squareSize, 0.f, 1.f)
-	//	));
-	//}
+	CG_LOG_INFO("number of squares: {} x {}", squareSize, squareSize);
+	CG_LOG_INFO("square size: {}", squareSize);
+
+	for (int x = 0; x < m_Nsquare; ++x) {
+		for (int z = 0; z < m_Nsquare; ++z) {
+			_planes.push_back(std::make_unique<Plane>(
+				glm::vec3(x * 3, 0.f, z * 3),
+				glm::vec3(90.f, 0.f, 0.f),
+				glm::vec3(squareSize, 0.f, squareSize)
+			));
+		}
+	}
 }
 
-const std::vector<CG::Plane>& CG::CheckeredFloor::board() const
+const std::vector<std::unique_ptr<CG::AShape>>& CG::CheckeredFloor::board() const
 {
 	return _planes;
 }

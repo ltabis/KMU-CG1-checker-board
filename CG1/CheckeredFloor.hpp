@@ -14,11 +14,13 @@ namespace CG {
 		// nsquare: number of squares for each side.
 		CheckeredFloor(int size, int nsquare);
 
-		const std::vector<Plane>& board() const;
+		const std::vector<std::unique_ptr<AShape>>& board() const;
+		int size() const    { return m_Size;    }
+		int nsquare() const { return m_Nsquare; }
 	private:
 		int m_Size;
 		int m_Nsquare;
 
-		std::vector<Plane> _planes;
+		std::vector<std::unique_ptr<AShape>> _planes;
 	};
 }
