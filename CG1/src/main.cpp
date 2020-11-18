@@ -21,7 +21,7 @@ int main(void)
 	// Creating the camera controller.
 	CG::NoClipCameraController controller(
 		renderer.window(),
-		glm::vec3(0.f, 0.f, 1.f),
+		glm::vec3(-3.f, 3.f, 1.f),
 		glm::vec3(0.f)
 	);
 	controller.speed = 0.1f;
@@ -85,8 +85,8 @@ int main(void)
 		const auto& board = floor.board();
 
 		// Rendering the floor.
-		for (size_t x = 0, it = 0; x < floor.nsquare(); ++x, it += floor.nsquare()) {
-			for (size_t z = 0, i = x; z < floor.nsquare(); ++z, ++i) {
+		for (int x = 0, it = 0; x < floor.nsquare(); ++x, it += floor.nsquare()) {
+			for (int z = 0, i = x; z < floor.nsquare(); ++z, ++i) {
 
 				int idx = it + z;
 
