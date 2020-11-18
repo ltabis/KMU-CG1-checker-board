@@ -1,7 +1,2 @@
 ﻿  CheckeredFloor.cpp
-C:\dev\Computer Graphics 1\KMU-CG1-checker-board\CG1\CheckeredFloor.cpp(7,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-C:\dev\Computer Graphics 1\KMU-CG1-checker-board\CG1\src\main.cpp(82,32): warning C4018: '<': signed/unsigned mismatch
-C:\dev\Computer Graphics 1\KMU-CG1-checker-board\CG1\src\main.cpp(83,32): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
   CG1.vcxproj -> C:\dev\Computer Graphics 1\KMU-CG1-checker-board\bin\Win32\Debug\CheckerBoard.exe
