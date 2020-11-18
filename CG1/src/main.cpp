@@ -53,10 +53,11 @@ int main(void)
 	// assigning callbacks for the renderer.
 	renderer.registerKeyBindingCallback(GLFW_KEY_ESCAPE, escape_callback);
 	
-	// useful variables for frame independent code and fps mode for the controller.
+	// useful variables for frame independent code and fps mode & help for the controller.
 	float deltaTime = 0.f;
 	float lastFrame = 0.f;
-	bool _fpsMode = false;
+	bool  fpsMode = false;
+	bool  helpOpened = true;
 
 	while (!renderer.windowShouldClose()) {
 
@@ -73,10 +74,32 @@ int main(void)
 		gui.newFrame();
 		renderer.clear();
 
+		// camera controller imgui settings.
+		ImGui::Begin("Camera Controller");
+		// control over the projection matrix.
+		if (ImGui::InputFloat("camera speed", &controller.speed, 1))
+			CG_CONSOLE_INFO("Controller speed set to {}", controller.speed);
+		if (ImGui::InputFloat("camera sensitivity speed", &controller.sensitivity, 1))
+			CG_CONSOLE_INFO("Controller sensitivity set to {}", controller.speed);
+		if (ImGui::Button("Help"))
+			helpOpened = !helpOpened;
+
+		if (helpOpened) {
+			ImGui::BeginChild("Tips");
+			ImGui::TextColored(ImVec4(1.f, 0.f, 0.f, 1.f), "How to use the controller.");
+			ImGui::Text("Use the mouse to look around.");
+			ImGui::Text("Use 'W' 'A' 'S' 'D' to move the camera.");
+			ImGui::Text("Use 'Space' and 'Left Shift' to move the camera up or down.");
+			ImGui::Text("Press mouse right click to enter fps mode and reclick to get out");
+			ImGui::EndChild();
+		}
+		ImGui::End();
+
+
 		// updating the fps mode if mouse clicked.
 		if (glfwGetMouseButton(renderer.window(), GLFW_MOUSE_BUTTON_2) == GLFW_PRESS) {
-			_fpsMode = !_fpsMode;
-			if (_fpsMode)
+			fpsMode = !fpsMode;
+			if (fpsMode)
 				glfwSetInputMode(renderer.window(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			else
 				glfwSetInputMode(renderer.window(), GLFW_CURSOR, GLFW_CURSOR_NORMAL);
